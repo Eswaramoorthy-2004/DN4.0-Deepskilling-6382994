@@ -1,0 +1,110 @@
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Card Layout */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Book Section */
+.book-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.book-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 16px;
+}
+
+.book-card li:last-child {
+  border-bottom: none;
+}
+
+/* Blog Section */
+.blog-card .title {
+  font-size: 20px;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.blog-card .author {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Course Section */
+.course-card .title {
+  font-size: 20px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.course-card .instructor {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+/* Booking Message */
+.booking-alert {
+  background-color: #d1f7d1;
+  color: #1e7e34;
+  padding: 12px 20px;
+  border: 1px solid #a3d7a3;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
